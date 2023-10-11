@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>My First Page</title>
+    </head>
+    <body>
+        <h1>Conor's Homepage</h1>
+
+        <br>
+
+        <p>
+            <h3> My Favorite Activities:</h3>
+
+            <ul>
+                <li>Soccer</li>
+                <li>Skiing</li>
+                <li>Basketball</li>
+                <li>Music</li>
+                <li>Video Games</li>
+            </ul>
+
+            <br>
+
+            <ol>
+                <li>
+                    <a href="https://www.tamarackbrewing.com/">Tamarack Brewing company</a>
+                </li>
+
+                <li>
+                    <a href="https://goldensingha.com/">Golden Singha Thai Cuisine</a>
+                </li>
+
+                <li>
+                    <a href="https://www.pagliacci.com/">Pagliacci Pizza</a>
+                </li>
+
+                <li>
+                    <a href="https://www.ddir.com/">Dick's Drive-in</a>
+                </li>
+
+                <li>
+                    <a href="https://elliottbaybrewing.com/">Elliot Bay Brewing Company</a>
+                </li>
+            </ol>
+        </p>
+    </body>
+</html>
