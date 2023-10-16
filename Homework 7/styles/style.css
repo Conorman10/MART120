@@ -1,0 +1,33 @@
+h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center
+}
+
+img {
+    border: 10px solid black;
+}
+
+#specificColor{
+    color:blue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#specificLink{
+    color:red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.purpleColor{
+    color: purple;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.redColor{
+    color:red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,5 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="sketch">
+        <meta name="author" content="Conor Manley">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <script src="./styles/bootstrap-5.3.2-dist/js/jquery-3.7.1.min.js"></script>
+        <script src="./styles/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
         <title>
             Contact Me
         </title>
@@ -17,38 +26,22 @@
                 padding: 2.0%;
                 border: 5px black solid;
             }
-            
+
         </style>
+    
+    </head>
 
         <body>
 
-            <nav>
-            
-                <ul style="display: inline;">
-                    <li style="display: inline;">
-                        <a href="index.html">Home</a>
-                    </li>    
-                    &vert;
-                    <li style="display: inline;">
-                        <a href="about.html">About</a>
-                    </li>
-                    &vert;
-                    <li style="display: inline;">
-                        <a href="contact.html">Contact</a>
-                    </li>    
-                </ul>
-    
-            </nav>
-
             <span>
-                <h1>
+                <h1 class="purpleColor">
                     CONTACT ME
                 </h1>
             </span>    
 
             <form method="POST" action="index.html">
     
-                <p>
+                <p class="redColor">
                     Your Name:<br />
                     <input type="text" id="name" placeholder="Last name, First name" autofocus>
                 </p>
@@ -64,8 +57,8 @@
     
                 <p>
                     Do you Accept the Terms and Conditions?<br/>
-                    Yes <input type="checkbox" name="recommend" id="recommend" value="Y">
-                    No <input type="checkbox" name="recommend" id="recommend" value="N">
+                    Yes <input type="checkbox" name="recommend" id="recommend" value="Y" class="btn btn-success">
+                    No <input type="checkbox" name="recommend" id="recommend" value="N" class="btn btn-danger">
                 </p>
     
                 <input type="button"

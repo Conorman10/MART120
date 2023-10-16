@@ -10,20 +10,22 @@
             My First Page
         </title>
 
+        <style>
+
+            nav {
+                background-color: rgb(72, 72, 186);
+                text-align: right;
+                color: white;
+                padding: 2.0%;
+                border: 5px black solid;
+            }
+    
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
     </head>
 
-    <style>
-
-        nav {
-            background-color: rgb(72, 72, 186);
-            text-align: right;
-            color: white;
-            padding: 2.0%;
-            border: 5px black solid;
-        }
-
-    </style>
-    
     <body>
 
         <nav>
@@ -51,10 +53,8 @@
         <br>
 
         <p>
-            <h3>
-                My Favorite Activities:
-            </h3>
-
+            <span id="specificColor">My Favorite Activities</span>
+            
             <ul style="text-decoration: crimson;">
                 <li>Soccer</li>
                 <li>Skiing</li>
@@ -70,7 +70,7 @@
             </h3>
             <ol style="text-shadow: blueviolet;">
                 <li>
-                    <a href="https://www.tamarackbrewing.com/">Tamarack Brewing company</a>
+                    <a href="https://www.tamarackbrewing.com/" id="specificLink" target="_new">Tamarack Brewing company</a>
                 </li>
 
                 <li>
