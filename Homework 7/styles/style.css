@@ -3,10 +3,6 @@ h1 {
     text-align: center;
 }
 
-h3 {
-    text-align: center
-}
-
 img {
     border: 10px solid black;
 }
@@ -30,4 +26,9 @@ img {
 .redColor{
     color:red;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.greenColor{
+    color:green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
