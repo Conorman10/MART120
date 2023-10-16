@@ -19,16 +19,16 @@ img {
 }
 
 .purpleColor{
-    font: purple;
+    color: purple;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .redColor{
-    font:red;
+    color:red;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .greenColor{
-    font:green;
+    color:green;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
