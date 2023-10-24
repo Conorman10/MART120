@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="sketch">
+        <meta name="author" content="Conor Manley">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <script src="./styles/bootstrap-5.3.2-dist/js/jquery-3.7.1.min.js"></script>
+        <script src="./styles/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
+        <title>
+            Contact Me
+        </title>
+
+        <style>
+
+            span{
+                background-color:purple;
+            }
+
+            nav {
+                background-color: rgb(216, 25, 162);
+                text-align: right;
+                color: white;
+                padding: 2.0%;
+                border: 5px black solid;
+            }
+
+        </style>
+    
+    </head>
+
+        <body>
+
+            <nav>
+            
+                <ul style="display: inline;">
+                    <li style="display: inline;">
+                        <a href="index.html">Home</a>
+                    </li>    
+                    &vert;
+                    <li style="display: inline;">
+                        <a href="about.html">About</a>
+                    </li>
+                    &vert;
+                    <li style="display: inline;">
+                        <a href="contact.html">Contact</a>
+                    </li>    
+                </ul>
+    
+            </nav>
+
+            <span>
+                <h1 class="purpleColor">
+                    CONTACT ME
+                </h1>
+            </span>    
+
+            <form method="POST" action="index.html" >
+    
+                <p>
+                    Your Name:<br />
+                    <input type="text" id="name" placeholder="Last name, First name" autofocus required pattern="">
+                </p>
+
+                <p>
+                    Email Address:<br />
+                    <textarea 
+                        name="comments" id="comments" rows="1" cols="30">
+                    </textarea>
+                    <br />
+                    <input type="submit" required/>
+                </p>
+    
+                <p>
+                    Do you Accept the Terms and Conditions?<br/>
+                    Yes <input type="checkbox" name="recommend" id="recommend" value="Y" class="btn btn-success" >
+                    No <input type="checkbox" name="recommend" id="recommend" value="N" class="btn btn-danger" >
+                </p>
+    
+                <input type="button"
+                value="Submit" required>
+    
+            </form>
+
+            <script> 
+
+            document.getElementById("myForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+            
+                let inputs = this.querySelectorAll("input[type='text']");
+            
+                let allFilled = true;
+                inputs.forEach(input => {
+                    if (input.value.trim() === "") {
+                        allFilled = false;
+                        input.classList.add("error");
+                    } else {
+                        input.classList.remove("error");
+                    }
+                });
+            
+                if (allFilled) {
+                    console.log("Form can be submitted!");    
+                }
+            });
+            
+            </script>
+
+        </body>
+    </head>
+</html>

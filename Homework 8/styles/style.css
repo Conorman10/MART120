@@ -33,3 +33,7 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.input-error {
+    border: 2px solid red;
+}
+
