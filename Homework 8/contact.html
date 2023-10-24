@@ -54,7 +54,7 @@
             });
         });
         </script>
-        
+
         <title>
             Contact Me
         </title>
@@ -103,26 +103,31 @@
                 </h1>
             </span>    
 
-            <form method="POST" action="index.html" >
+            <form method="POST" action="index.html" id="contactForm" >
     
                 <p>
-                    Your Name:<br />
-                    <input type="text" id="name" placeholder="Last name, First name" autofocus required>
+                    <label>
+                        Your Name:<br />
+                        <input type="text" id="name" placeholder="Last name, First name" autofocus required>
+                    </label>
                 </p>
 
                 <p>
-                    Email Address:<br />
-                    <input type="email" name="email" id="email" rows="1" cols="30" required>
+                    <label>
+                        Email Address:<br />
+                        <input type="email" id="email" rows="1" cols="30" required>
+                    </label>
                 </p>
     
                 <p>
-                    Do you Accept the Terms and Conditions?<br/>
-                    Yes <input type="checkbox" name="recommend" id="recommend" value="Y" class="btn btn-success" required >
-                    No <input type="checkbox" name="recommend" id="recommend" value="N" class="btn btn-danger" >
+                    <label>
+                        Do you Accept the Terms and Conditions?<br/>
+                        Yes <input type="checkbox" name="recommend" id="terms" value="Y" class="btn btn-success" required >
+                        No <input type="checkbox" name="recommend" id="terms" value="N" class="btn btn-danger" >
+                    </label>    
                 </p>
     
-                <input type="button"
-                value="Submit">
+                <button type="submit">Submit</button>
     
             </form>
 
