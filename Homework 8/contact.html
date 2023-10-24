@@ -8,6 +8,52 @@
         <link rel="stylesheet" href="./styles/bootstrap-5.3.2-dist/css/bootstrap.min.css">
         <script src="./styles/bootstrap-5.3.2-dist/js/jquery-3.7.1.min.js"></script>
         <script src="./styles/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+        <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', function(e) {
+                let hasError = false;
+
+                const nameInput = document.getElementById('name');
+                if (!nameInput.value.trim()) {
+                    nameInput.classList.add('error');
+                    if (!hasError) {
+                        nameInput.focus();
+                        hasError = true;
+                    }
+                } else {
+                    nameInput.classList.remove('error');
+                }
+
+                const emailInput = document.getElementById('email');
+                if (!emailInput.value.trim()) {
+                    emailInput.classList.add('error');
+                    if (!hasError) {
+                        emailInput.focus();
+                        hasError = true;
+                    }
+                } else {
+                    emailInput.classList.remove('error');
+                }
+
+                const termsCheckbox = document.getElementById('terms');
+                if (!termsCheckbox.checked) {
+                    termsCheckbox.classList.add('error');
+                    if (!hasError) {
+                        termsCheckbox.focus();
+                        hasError = true;
+                    }
+                } else {
+                    termsCheckbox.classList.remove('error');
+                }
+
+                if (hasError) {
+                    e.preventDefault(); // Prevent the form from submitting
+                }
+            });
+        });
+        </script>
         
         <title>
             Contact Me
@@ -66,7 +112,7 @@
 
                 <p>
                     Email Address:<br />
-                    <input type="text" name="comments" id="comments" rows="1" cols="30" required>
+                    <input type="email" name="email" id="email" rows="1" cols="30" required>
                 </p>
     
                 <p>
